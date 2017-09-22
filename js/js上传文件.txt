@@ -1,0 +1,20 @@
+        
+	function uploadFile() {
+            var myform = new FormData();
+            var file = $('.inputFile')[0].files[0];
+            myform.append('file', file);
+            //console.log($('.inputFile')[0].files);
+            $.ajax({
+                url: "{:U('System/excel')}",
+                type: "POST",
+                data: myform,
+                contentType: false,
+                processData: false,
+                success: function(data) {
+                    console.log(data);
+                },
+                error: function(data) {
+                    console.log(data)
+                }
+            });
+        }

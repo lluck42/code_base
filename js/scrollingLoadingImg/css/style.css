@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*wrapper*/
+.wrapper{
+    width: 500px;
+    height: 5000px;
+    margin: auto;
+}
+.img-box{
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    height: 260px;
+    text-align: center;
+    border-bottom: 2px dashed #ccc;
+}
