@@ -1,8 +1,5 @@
-location / {
+﻿location / {
     index  index.html index.htm index.php;
     #autoindex  on;
-    if (!-e $request_filename) {
-                #一级目录
-                rewrite ^/(.*)$ /index.php/$1 last;
-    }  
+    if(!-e $request_filename){rewrite ^/(.*)$ /index.php/$1 last;};
 }
