@@ -1,0 +1,2 @@
+npm run lint -- --fix
+vscode eslint 自动格式化

@@ -18,3 +18,11 @@
                 }
             });
         }
+
+                uploadIdPhotos:function(){
+                    $('#inputFile').click();
+                },
+
+
+
+       <input type="file" multiple id="inputFiles" @change="id_card_upload()" style="display:none">
